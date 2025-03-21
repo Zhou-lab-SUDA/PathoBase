@@ -1,7 +1,8 @@
 # PathoBase
 An open database for storing and processing the genomes of multiple pathogens, providing genomic information including dcgMLST typing, genome annotation, and plasmid prediction.
+
 ## Quick Start
-PathoBase is a database built upon the foundation of the earlier [EnteroBase](https://enterobase.warwick.ac.uk/), operated and maintained by the research group of Prof. Zhemin Zhou at Soochow University. It is a fully web-based centralized database, and Google Chrome is recommended for access. PathoBase shares the same usage logic as EnteroBase. Therefore, if you have previously used EnteroBase, you should find PathoBase familiar.  
+PathoBase is a database built upon the foundation of the earlier [EnteroBase](https://enterobase.warwick.ac.uk/), operated and maintained by the research group of Prof. Zhemin Zhou at Soochow University. It is a fully web-based centralized database, and [Google Chrome](https://www.google.com/chrome/) is recommended for access. PathoBase shares the same usage logic as EnteroBase. Therefore, if you have previously used EnteroBase, you should find PathoBase quite familiar.  
 
 The homepage of PathoBase displays available bacterial databases (currently including *A. baumannii*, *A. pittii*, and *S. aureus*) along with an overview of the corresponding bacterial genome counts. You can click on any database to access genomic information for the selected pathogen. However, guest accounts cannot download genome assembly results or create GrapeTree visualizations. We strongly recommend registering and logging in to unlock the full functionality of PathoBase. Let's start with account registration:  
 
