@@ -1,5 +1,5 @@
 # PathoBase
-An open database for storing and processing the genomes of multiple pathogens, providing genomic information including dcgMLST typing, genome annotation, and plasmid prediction.
+An open database for storing and processing the genomes of multiple pathogens, providing genomic information including dcgMLST typing<sup>1<sup/>, genome annotation, and plasmid prediction.
 
 ## Quick Start
 PathoBase is a database built upon the foundation of the earlier [EnteroBase](https://enterobase.warwick.ac.uk/), operated and maintained by the research group of Prof. Zhemin Zhou at Soochow University. It is a fully web-based centralized database, and [Google Chrome](https://www.google.com/chrome/) is recommended for access. PathoBase shares the same usage logic as EnteroBase. Therefore, if you have previously used EnteroBase, you should find PathoBase quite familiar.  
