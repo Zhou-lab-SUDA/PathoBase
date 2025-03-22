@@ -8,6 +8,7 @@ The PathoBase homepage displays the available bacterial databases—currently fe
 ### Account Registration
 
 For potential use of Reviewers, we offered a DEMO administrator account:
+
 Account: `zhemin`
 Password: `Soochow`
 
@@ -19,8 +20,10 @@ To register for PathoBase:
 4.	Check your email for a verification message containing an activation link
 5.	Follow the verification link to activate your account and gain access to PathoBase
 
+![image](https://github.com/user-attachments/assets/d28e4bf3-50a0-4b5b-a637-40bce7ecba2f)
+
  
-Logging In
+### Logging In
 Users with existing accounts can authenticate by:
 
 1.	Clicking the Log In button
