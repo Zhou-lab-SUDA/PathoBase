@@ -21,7 +21,6 @@ To register for PathoBase:
 5.	Follow the verification link to activate your account and gain access to PathoBase
 
 ![image](https://github.com/user-attachments/assets/d28e4bf3-50a0-4b5b-a637-40bce7ecba2f)
-
  
 ### Logging In
 Users with existing accounts can authenticate by:
@@ -32,24 +31,90 @@ Users with existing accounts can authenticate by:
 
 First-time users will receive a brief tutorial introducing key features, though experienced users may choose to explore the database structure, analysis workflows, and the dcgMLST + HierCC (Hierarchical Clustering of cgMLST) 3 algorithm independently.
 
-
-## Tutorial based on a simple case
-PathoBase excels in storing genomes and clustering newly deposited genomes using **dcgMLST + HierCC**, making it particularly effective in identifying epidemiological associations between strains. We will guide you step by step through an actual example to help you master the basic functionalities of PathoBase.
-
-### *Acinetobacter pittii*
-
-The first part of our tutorial covers genome upload. After logging in and selecting the target pathogen database, you will see the **Upload Reads** option on the left sidebar. Clicking this will direct you to the metadata entry page (if errors occur, refresh the page). Here, you must provide metadata for your genome. We require minimal but informative sample details (e.g., isolation date and country) to assist other users.  
-
-By default, only **raw sequencing reads** (not pre-assembled genomes) are allowed for upload to minimize analytical variability. **Trusted users** may upload assembled genomes. After completing the metadata fields, switch to the data upload page by clicking the **Upload Data** tab. Select the folder containing your data files and click **Upload** to initiate the process. Track progress via the **Job List**, where you can click the task ID for real-time status updates.  
-Once analysis concludes, your genome will be integrated into PathoBase. To view all genomes for a species, navigate to its database page and click **Search Strains** > **All Strains**.  
-
-Our *A. pittii* repository includes **xxx preloaded example genomes** from our cgMLST study (see **Supplementary Table X**). These span **x years** and **x countries**, covering **x distinct HC1100s** (see **dcgMLST + HierCC** analysis).  
-Return to **Search Strains** and apply filters based on your uploaded genome's metadata. In addition to basic details, the right-side dropdown menu will display population assignments from **cgMLST + HierCC**. For *A. pittii*, two hierarchical clusters are defined: **HC450** and **HC1100**. We recommend starting with **HC1100**.  
-
-Each genome is assigned an integer HC1100 value. Reapply the **Search Strains** filter under **Experimental Data** to select genomes sharing your strain's HC1100 value. This retrieves evolutionarily closely related genomes.  
+![image](https://github.com/user-attachments/assets/5cf606d9-a1bf-4bbf-9e25-f4817397156d)
 
 
-###
+## Tutorial: Analyzing Bacterial Strains
+PathoBase excels in genomic data storage and strain classification through its dcgMLST + HierCC implementation, which efficiently identifies epidemiological relationships between bacterial isolates. The following tutorial demonstrates core functionalities using real data examples. 
+
+Case Study: *Acinetobacter pittii* Analysis
+### Genome Upload Process
+After authentication and selection of your target pathogen database, follow these steps to upload genomic data:
+
+1.	Select Upload Reads from the left navigation panel
+
+![image](https://github.com/user-attachments/assets/f649be26-d52d-464c-9b60-8ff0b8678316)
+
+2.	Complete the metadata entry form with essential epidemiological information
+   * Isolation date, geographic origin, and clinical context are particularly valuable for epidemiological tracking
+   * Comprehensive metadata enhances the utility of your contribution for other researchers
+
+![image](https://github.com/user-attachments/assets/265ebb70-bac6-49dc-a78c-e5920f03e202)
+
+![image](https://github.com/user-attachments/assets/a674a61e-0895-4289-8f22-29695db26560)
+
+![image](https://github.com/user-attachments/assets/7b1509b9-bfdf-4ea4-84df-3f20e79227c0)
+
+By default, PathoBase accepts only raw sequencing reads rather than pre-assembled genomes to ensure analytical consistency and minimize methodological variability. However, users with verified credentials (**"Trusted Users"**) may upload pre-assembled genomes in exceptional circumstances.
+
+After completing the metadata form:
+1.	Navigate to the Upload Data tab
+2.	Select the directory containing your sequencing files
+3.	Initiate the upload process by clicking Upload
+4.	Monitor processing status through the Job List section
+5.	Access detailed progress information by selecting the associated task ID
+
+![image](https://github.com/user-attachments/assets/ce0a5e2b-decd-4c7b-bf55-01e4860043d8)
+
+Once analysis is complete, your genome will be integrated into the PathoBase repository and annotated with appropriate metadata and typing information. To view all genomes within a species database, navigate to the database page and select Search Strains > All Strains from the navigation menu.
+
+![image](https://github.com/user-attachments/assets/87f6cc00-0638-4937-b880-d2d73b050a99)
+
+![image](https://github.com/user-attachments/assets/7048af4c-4764-4f6b-af99-e66ca9e4c59d)
+
+### Comparative Genomic Analysis
+The A. pittii repository contains 726 reference genomes collected over 33 years from 30 countries, representing 148 distinct HC1100 types (high-resolution hierarchical clusters) from our comprehensive cgMLST study (see Supplementary Data 1 for details).
+
+![image](https://github.com/user-attachments/assets/8bc72dce-cc50-4c01-996e-4b0d55a734b7)
+
+To identify related strains:
+1.	Return to Search Strains and apply filters matching your genome's metadata
+2.	Note the population assignments generated by the cgMLST + HierCC analysis
+3.	For A. pittii, two hierarchical clustering thresholds are defined: HC450 and HC1100
+4.	HC1100 provides higher resolution and is recommended for initial analysis
+
+![image](https://github.com/user-attachments/assets/9954be40-cf5b-4321-8067-e93bdf076a41)
+
+![image](https://github.com/user-attachments/assets/0bc3941c-6b17-4bc6-bb2c-c988bec6b600)
+
+Each genome receives a unique integer HC1100 identifier. To retrieve evolutionarily related genomes:
+1.	Reapply the Search Strains filter
+2.	Select the Experimental Data tab
+3.	Filter by your strain's HC1100 value to identify closely related isolates
+
+This approach rapidly identifies genetically similar strains that may share epidemiological connections, enabling efficient outbreak investigation and evolutionary analysis.
+
+### Visualization
+You can use multiple algorithms provided by PathoBase to rapidly construct **cgMLST-based phylogenetic trees** for strains with assigned HC identifiers, which can then be visualized via **GrapeTree**. The figure below shows the initial interface for building a cgMLST tree using all currently displayed strain genomes:
+
+![image](https://github.com/user-attachments/assets/146ccd87-55a0-4910-89ad-7bd5506f249b)
+
+![image](https://github.com/user-attachments/assets/832649b8-5b55-44de-9e3d-e3e271b4630a)
+
+For the genomes in this tutorial, we recommend generating a **minimum spanning tree** using **RapidNJ**. Click **Submit** to queue the tree-building task for background analysis. If successful, a pop-up window will appear in your browser. After a brief wait, you will see the GrapeTree visualization results as shown in the figure below:  
+
+![image](https://github.com/user-attachments/assets/3805f282-4260-4189-a994-c331ba07952c)
+
+At this stage, you cannot directly group genome nodes based on **Experimental Data** (e.g., HC1100 assignments). To import HC1100 data:  
+1. Click **Import fields** in the visualization interface.  
+2. Select **Experiment** from the dropdown menu.  
+3. Choose **HC1100** (or other fields of interest) to load hierarchical cluster assignments from the database.
+
+![image](https://github.com/user-attachments/assets/b67ae74c-ac99-443b-8c11-e160493bab72)
+
+![image](https://github.com/user-attachments/assets/8502eafc-e94b-4ab3-b54a-99d51a8c1e70)
+
+![image](https://github.com/user-attachments/assets/557bd68d-fbf5-4c16-b652-13e2d79479db)
 
 
 
