@@ -29,7 +29,7 @@ Users with existing accounts can authenticate by:
 2.	Entering their username and password credentials
 3.	Selecting the "Remember me" option (optional) for persistent sessions
 
-First-time users will receive a brief tutorial introducing key features, though experienced users may choose to explore the database structure, analysis workflows, and the dcgMLST + HierCC (Hierarchical Clustering of cgMLST) 3 algorithm independently.
+First-time users will receive a brief tutorial introducing key features, though experienced users may choose to explore the database structure, analysis workflows, and the dcgMLST + HierCC (Hierarchical Clustering of cgMLST) [^ref3] algorithm independently.
 
 ![image](https://github.com/user-attachments/assets/5cf606d9-a1bf-4bbf-9e25-f4817397156d)
 
