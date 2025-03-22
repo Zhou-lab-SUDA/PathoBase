@@ -1,16 +1,34 @@
 # PathoBase
-An open database for storing and processing the genomes of multiple pathogens, providing genomic information including dcgMLST typing[^ref1], genome annotation, and plasmid prediction.
+PathoBase is an open bioinformatics platform for storing, analyzing, and processing microbial pathogen genomes. The database provides comprehensive genomic analysis capabilities, including distributed core genome Multi-Locus Sequence Typing (dcgMLST) [^ref1], automated genome annotation, and advanced plasmid prediction algorithms.
 
 ## Quick Start
-PathoBase is a database built upon the foundation of the earlier [EnteroBase](https://enterobase.warwick.ac.uk/)[^ref2], operated and maintained by the research group of Prof. Zhemin Zhou at Soochow University. It is a fully web-based centralized database, and [Google Chrome](https://www.google.com/chrome/) is recommended for access. PathoBase shares the same usage logic as EnteroBase. Therefore, if you have previously used EnteroBase, you should find PathoBase quite familiar.  
+PathoBase was developed based on the open-source framework of [EnteroBase](https://enterobase.warwick.ac.uk/)[^ref2], and is currently maintained by Professor Zhemin Zhou's research group at Soochow University. As a web-based centralized database, PathoBase is optimized for use with [Google Chrome](https://www.google.com/chrome/) and maintains similar interface logic to EnteroBase, making it immediately familiar to users of that platform.
+The PathoBase homepage displays the available bacterial databases—currently featuring *Acinetobacter pittii*, *Acinetobacter baumannii*, and *Staphylococcus aureus*—along with real-time statistics on genome counts for each pathogen. Users can access species-specific genomic information by selecting any of these databases. While limited browsing is available to guest users, full functionality—including genome assembly downloads and GrapeTree visualizations—requires registration and authentication.
 
-The homepage of PathoBase displays available bacterial databases (currently including *A. baumannii*, *A. pittii*, and *S. aureus*) along with an overview of the corresponding bacterial genome counts. You can click on any database to access genomic information for the selected pathogen. However, guest accounts cannot download genome assembly results or create GrapeTree visualizations. We strongly recommend registering and logging in to unlock the full functionality of PathoBase. Let's start with account registration:  
+### Account Registration
 
-### Registration  
-Click the **Register** button in the upper-right corner of the homepage. In the pop-up window, fill in your username, password, email address, and personal information. After completing the required fields, click **Register**. A verification email will be sent to your provided email address. Follow the verification link in the email to complete registration and log in to PathoBase.  
+For potential use of Reviewers, we offered a DEMO administrator account:
+Account: `zhemin`
+Password: `Soochow`
 
-### Login  
-Users with existing accounts or those accessing PathoBase via verification credentials can log in by clicking the **Log In** button. Enter your username and password to access most content of PathoBase. We provide a brief tutorial for first-time users, or you may explore the database structure, analysis workflows, and the **dcgMLST + HierCC**[^ref3] algorithm independently. 
+To register for PathoBase:
+
+1.	Click the Register button in the upper-right corner of the homepage
+2.	Complete all required fields in the registration form, including username, password, email address, and institutional affiliation
+3.	Submit the form by clicking Register
+4.	Check your email for a verification message containing an activation link
+5.	Follow the verification link to activate your account and gain access to PathoBase
+
+ 
+Logging In
+Users with existing accounts can authenticate by:
+
+1.	Clicking the Log In button
+2.	Entering their username and password credentials
+3.	Selecting the "Remember me" option (optional) for persistent sessions
+
+First-time users will receive a brief tutorial introducing key features, though experienced users may choose to explore the database structure, analysis workflows, and the dcgMLST + HierCC (Hierarchical Clustering of cgMLST) 3 algorithm independently.
+
 
 ## Tutorial based on a simple case
 PathoBase excels in storing genomes and clustering newly deposited genomes using **dcgMLST + HierCC**, making it particularly effective in identifying epidemiological associations between strains. We will guide you step by step through an actual example to help you master the basic functionalities of PathoBase.
